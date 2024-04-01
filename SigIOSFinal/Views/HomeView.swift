@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var destinationsVM: DestinationsViewModel
+    
     var body: some View {
         NavigationView {
-            Text("Home")
-                .navigationTitle("Home")
-            
+            ScrollView{
+                DestinationsList(destinations: destinationsVM.destinations)
+            }
+            .navigationTitle("Home")
         }
-        
         .navigationViewStyle(.stack)
     }
 }
 
-#Preview {
-    HomeView()
+struct HomeView_Previews: PreviewProvider{
+    static var previews: some View{
+        HomeView()
+            .environmentObject(DestinationsViewModel())
+    }
 }

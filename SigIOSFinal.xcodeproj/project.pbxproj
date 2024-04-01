@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		6A29C7012B6C41EF00319D34 /* DestinationsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A29C7002B6C41EF00319D34 /* DestinationsList.swift */; };
 		6A29C7042B6EA1CD00319D34 /* DestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A29C7032B6EA1CD00319D34 /* DestinationView.swift */; };
+		6A373B932BC84FA60021AE0B /* AddDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A373B922BC84FA60021AE0B /* AddDestinationView.swift */; };
 		6AC1E3052B7E7B4200B23A7B /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1E3042B7E7B4100B23A7B /* SwiftUIView.swift */; };
+		6AC7C7612BD6AA1F00165F40 /* DestinationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC7C7602BD6AA1F00165F40 /* DestinationsViewModel.swift */; };
 		6ACABD152B63048D00B47765 /* SigIOSFinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACABD142B63048D00B47765 /* SigIOSFinalApp.swift */; };
 		6ACABD172B63048D00B47765 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACABD162B63048D00B47765 /* ContentView.swift */; };
 		6ACABD192B63048F00B47765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ACABD182B63048F00B47765 /* Assets.xcassets */; };
@@ -26,6 +28,7 @@
 		6ACABD512B6308AD00B47765 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACABD502B6308AD00B47765 /* TabBar.swift */; };
 		6ACABD532B630B0D00B47765 /* DestinationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACABD522B630B0D00B47765 /* DestinationModels.swift */; };
 		6ACABD552B630E2600B47765 /* DestinationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACABD542B630E2600B47765 /* DestinationCard.swift */; };
+		6AFAE7092B9E5AEE007755D8 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAE7082B9E5AED007755D8 /* CategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +51,9 @@
 /* Begin PBXFileReference section */
 		6A29C7002B6C41EF00319D34 /* DestinationsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationsList.swift; sourceTree = "<group>"; };
 		6A29C7032B6EA1CD00319D34 /* DestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationView.swift; sourceTree = "<group>"; };
+		6A373B922BC84FA60021AE0B /* AddDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDestinationView.swift; sourceTree = "<group>"; };
 		6AC1E3042B7E7B4100B23A7B /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		6AC7C7602BD6AA1F00165F40 /* DestinationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationsViewModel.swift; sourceTree = "<group>"; };
 		6ACABD112B63048D00B47765 /* SigIOSFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SigIOSFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ACABD142B63048D00B47765 /* SigIOSFinalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigIOSFinalApp.swift; sourceTree = "<group>"; };
 		6ACABD162B63048D00B47765 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,6 +73,7 @@
 		6ACABD502B6308AD00B47765 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		6ACABD522B630B0D00B47765 /* DestinationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationModels.swift; sourceTree = "<group>"; };
 		6ACABD542B630E2600B47765 /* DestinationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationCard.swift; sourceTree = "<group>"; };
+		6AFAE7082B9E5AED007755D8 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				6A29C7032B6EA1CD00319D34 /* DestinationView.swift */,
+				6AFAE7082B9E5AED007755D8 /* CategoryView.swift */,
+				6A373B922BC84FA60021AE0B /* AddDestinationView.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -182,6 +190,7 @@
 		6ACABD402B63059100B47765 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				6AC7C7602BD6AA1F00165F40 /* DestinationsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -337,16 +346,19 @@
 				6ACABD552B630E2600B47765 /* DestinationCard.swift in Sources */,
 				6ACABD472B63062200B47765 /* BucketListView.swift in Sources */,
 				6ACABD4F2B63068700B47765 /* MapView.swift in Sources */,
+				6AC7C7612BD6AA1F00165F40 /* DestinationsViewModel.swift in Sources */,
 				6ACABD452B6305FB00B47765 /* HomeView.swift in Sources */,
 				6ACABD532B630B0D00B47765 /* DestinationModels.swift in Sources */,
 				6ACABD4B2B63063A00B47765 /* CategoriesView.swift in Sources */,
 				6A29C7042B6EA1CD00319D34 /* DestinationView.swift in Sources */,
 				6AC1E3052B7E7B4200B23A7B /* SwiftUIView.swift in Sources */,
+				6A373B932BC84FA60021AE0B /* AddDestinationView.swift in Sources */,
 				6ACABD172B63048D00B47765 /* ContentView.swift in Sources */,
 				6ACABD152B63048D00B47765 /* SigIOSFinalApp.swift in Sources */,
 				6ACABD4D2B63068100B47765 /* ProfileView.swift in Sources */,
 				6A29C7012B6C41EF00319D34 /* DestinationsList.swift in Sources */,
 				6ACABD492B63063100B47765 /* DestinationsView.swift in Sources */,
+				6AFAE7092B9E5AEE007755D8 /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

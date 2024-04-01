@@ -15,22 +15,22 @@ struct TabBar: View {
                     Label("Home", systemImage: "house")
                 }
             
-            DestinationsView()
-            
-                .tabItem {
-                    Label("Destinations", systemImage: "list.bullet")
-                }
-            
             CategoriesView()
             
                 .tabItem {
                     Label("Categories", systemImage: "square.fill.text.grid.1x2")
                 }
             
-            BucketListView()
+            AddDestinationView()
             
                 .tabItem {
-                    Label("Bucket List", systemImage: "pencil")
+                    Label("Add", systemImage: "pencil")
+                }
+            
+            MapView()
+            
+                .tabItem {
+                    Label("Map", systemImage: "map")
                 }
             
             ProfileView()
@@ -39,15 +39,12 @@ struct TabBar: View {
                     Label("Profile", systemImage: "person.circle.fill")
                 }
             
-            MapView()
             
-                .tabItem {
-                    Label("Map", systemImage: "map")
-                }
         }
     }
 }
 
 #Preview {
     TabBar()
+        .environmentObject(DestinationsViewModel())
 }
